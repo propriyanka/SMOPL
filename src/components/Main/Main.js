@@ -1,11 +1,10 @@
-
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import image1 from '../../assets/Images/image1.jpg';
-import image2 from '../../assets/Images/image2.jpg';
-import image3 from '../../assets/Images/image3.jpg';
-import image4 from '../../assets/Images/image4.jpg';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import image1 from "../../assets/Images/Home Images/image1.jpg";
+import image2 from "../../assets/Images/Home Images/image2.jpg";
+import image3 from "../../assets/Images/Home Images/image3.jpg";
+import image4 from "../../assets/Images/Home Images/image4.jpg";
 
 const Slide = ({ image, title, description }) => {
   return (
@@ -20,11 +19,15 @@ const Slide = ({ image, title, description }) => {
             />
           </div>
         </div>
-        <div className="w-1/2 bg-stone-900 p-8">
-          <h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
-          <p className="text-lg text-white mb-8">{description}</p>
-          <button className="text-lg border text-white rounded-full border-white px-6 py-2 hover:bg-transparent hover:border-gray-300">
-            Contact
+        <div className="w-1/2 bg-stone-900 p-8  ">
+          <h2 className="text-3xl font-bold mt-[50%] ml-[10%] text-white">
+            {title}
+          </h2>
+          <p className="text-lg text-yellow-500 ml-[10%] mt-[25px]">
+            {description}
+          </p>
+          <button className="text-lg border text-stone-900 font-bold rounded-full border-yellow-500 bg-gray-200 px-6 py-2 hover:bg-yellow-500 ml-[10%] mt-[30px] hover:border-gray-300 ">
+            Contact Us
           </button>
         </div>
       </div>
@@ -35,26 +38,26 @@ const Slide = ({ image, title, description }) => {
 const Main = () => {
   const slides = [
     {
-        image: image1,
-        title: 'Architecture and Interior Consultancy',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-      },
-      {
-        image: image2,
-        title: 'Designing Spaces for You',
-        description: 'Suspendisse tristique nulla eget elit pretium interdum.',
-      },
-      {
-        image: image3,
-        title: 'Transforming Dreams into Reality',
-        description: 'Fusce at ligula eu sem volutpat blandit eu sit amet ex.',
-      },
-      {
-        image: image4,
-        title: 'Creating Functional Spaces',
-        description: 'Aenean et magna sed lectus consectetur fermentum.',
-      },
-    ];
+      image: image1,
+      title: "Architecture and Interior Consultancy",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    },
+    {
+      image: image2,
+      title: "Designing Spaces for You",
+      description: "Suspendisse tristique nulla eget elit pretium interdum.",
+    },
+    {
+      image: image3,
+      title: "Transforming Dreams into Reality",
+      description: "Fusce at ligula eu sem volutpat blandit eu sit amet ex.",
+    },
+    {
+      image: image4,
+      title: "Creating Functional Spaces",
+      description: "Aenean et magna sed lectus consectetur fermentum.",
+    },
+  ];
 
   return (
     <div>
